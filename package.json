@@ -1,0 +1,23 @@
+{
+  "name": "curriculum-vitae",
+  "version": "1.0.0",
+  "description": "Projek magang curriculum vitae menggunakan express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrjikMustaqim/Curriculum-vitae-magang.git"
+  },
+  "author": "M. Najmut Saqib Irji'i Mustaqim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IrjikMustaqim/Curriculum-vitae-magang/issues"
+  },
+  "homepage": "https://github.com/IrjikMustaqim/Curriculum-vitae-magang#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  }
+}
