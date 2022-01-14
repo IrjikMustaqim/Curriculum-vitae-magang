@@ -1,19 +1,36 @@
 const express = require('express')
-let cors = require('cors')
+const fs = require('fs')
 const app = express();
 
 
-app.use(cors());
-app.use(express.static(__dirname + "/public"))
+app.set('views', './public/Curriculum Vitae')
+app.set('view engine', 'ejs')
+
+app.use(express.json());
+app.use(express.static(__dirname + "/public/Curriculum Vitae"))
+
 
 app.get("/", (req, res) => {
-    res.sendFile("index.html")
+    res.render('index')
+})
+app.get("/admin", (req, res) => {
+    res.render('admin')
+})
+app.post("/mboh", (req, res) => {
+    console.log(req.body.hai)
 })
 
 app.get("/reg", (req, res) => {
-    res.json({ blok: "dsdsd" })
+    let c = {
+        message: "kampret lu"
+    }
 
+
+    res.json(
+        c
+    )
 })
+
 
 
 
